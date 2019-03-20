@@ -7,6 +7,10 @@ public class Main {
         System.out.print("enter n:");
         Scanner a=new Scanner(System.in);
         n=a.nextInt();
+        if (n%2==0) {
+            System.out.println("Error!");
+            return;
+        }
         n=n-(n/2);
         for(i=1;i<=n;i++)
         {
